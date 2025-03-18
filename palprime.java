@@ -58,3 +58,9 @@ public class palprime {
 	}
 
 }
+
+
+//output :
+//	Enter a number : 
+//  131
+//	Its a Palprime number
