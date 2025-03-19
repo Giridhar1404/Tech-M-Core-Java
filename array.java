@@ -38,6 +38,94 @@ public class array {
 	
 //output :
 //	Element 1 is smaller
+	
+	public void unq()
+	{
+		int[]a= {1,2,3,1,2,4};
+		
+		for(int i=0;i<a.length;i++)
+		{
+			int count=0;
+			for(int j=0;j<a.length;j++)
+			{
+				if(a[i]==a[j])
+				{
+					count++;
+				}
+			}
+			if(count==1)
+			{
+				System.out.println(a[i]+" is unique");
+			}
+			
+		}
+	}
+	
+//output :
+//	3 is unique
+//	4 is unique
+	
+	public void dup()
+	{
+		int[]a= {1,2,3,2,4,3};
+		for(int i=0;i<a.length;i++)
+		{
+			for(int k=i+1;k<a.length;k++)
+			{
+				if(a[i]==a[k])
+				{
+					System.out.println(a[i] + " is duplicate");
+					break;
+				}
+			}
+		}
+	}
+	
+// output :
+//	2 is duplicate
+//	3 is duplicate
+
+	public void left()
+	{
+		int[]a= {1,2,3,4,5};
+		int b=a[0];
+		int i;
+		for(i=0;i<a.length-1;i++)
+		{
+			a[i]=a[i+1];
+			
+		}
+		a[i]=b;
+		for(int j=0;j<a.length;j++)
+		{
+			System.out.print(a[j]+" ");
+			
+		}
+		
+	}
+
+// output : 2 3 4 5 1 
+	
+	public void right()
+	{
+		int[]a= {1,2,3,4,5};
+		int b=a[a.length-1];
+		int i;
+		for(i=a.length-1;i>0;i--)
+		{
+			a[i]=a[i-1];
+			
+		}
+		a[i]=b;
+		for(int j=0;j<a.length;j++)
+		{
+			System.out.print(a[j]+" ");
+			
+		}
+		
+	}
+	
+// output : 5 1 2 3 4 	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -45,6 +133,10 @@ public class array {
 		array a= new array();
 		a.a1();
 		a.a2();
+		a.unq();
+		a.dup();
+		a.left();
+		a.right();
 	}
 
 }
