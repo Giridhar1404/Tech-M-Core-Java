@@ -20,13 +20,7 @@ public class saloon {
 		System.out.println( " Progress : "+p);
 		System.out.println();
 	}
-	void count()
-	{
-		
-	}
-
-
-
+	
 	public static void main(String[] args) {
 		int count =0;
 		// TODO Auto-generated method stub
@@ -59,3 +53,42 @@ public class saloon {
 	}
 
 }
+
+
+// output : 
+//Number of customers :6
+//Id :101
+//Name :Hari
+//Visited for : Massage
+//Staff attended : Sai
+//Progress : completed
+//
+//Id :102
+//Name :Giri
+//Visited for : Massage
+//Staff attended : Pavan
+//Progress : completed
+//
+//Id :103
+//Name :Siva
+//Visited for : Hair cut
+//Staff attended : Nikhi
+//Progress : completed
+//
+//Id :104
+//Name :Venkat
+//Visited for : Beard
+//Staff attended : Sai
+//Progress : In progress
+//
+//Id :104
+//Name :Mahesh
+//Visited for : Tan Removal
+//Staff attended : Pavan
+//Progress : In progress
+//
+//Id :106
+//Name :Mani
+//Visited for : Massage
+//Staff attended : Nikhil
+//Progress : In progress
