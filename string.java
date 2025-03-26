@@ -22,7 +22,7 @@ public class string {
 
 // output : 
 //	The count of vowels in given string is :2
-//	The count of consonents in given string is :4
+//	The count of consonants in given string is :4
 
 	public void s2()
 	{
@@ -49,12 +49,46 @@ public class string {
 	
 //   output : VeNkAt
 	
+	public void s3()
+	{
+		String s="venkat";
+		String []a=s.split("");
+		for(int j=0;j<a.length;j++)
+		{
+			System.out.println(a[j]);
+		}
+	}
+	
+	public void s4()
+	{
+		String s="siva";
+		for(int i=s.length()-1;i>=0;i--)
+		{
+			System.out.print(s.charAt(i));
+		}
+	}
+	
+	public void length()
+	{
+		String s="giri";
+		char[]c=s.toCharArray();
+		int count=0;
+		for(char e:c)
+		{
+			count++;
+		}
+		System.out.println(count);
+	}
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
           string s=new string();
           s.s1();
           s.s2();
+          s.s3();
+          s.s4();
+          s.length();
 	}
 
 }
