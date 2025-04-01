@@ -80,15 +80,65 @@ public class string {
 		System.out.println(count);
 	}
 	
+	public void freq()
+	{
+		int i;
+		
+		String s="giri";
+		for( i=0;i<s.length()-1;i++)
+		{int count=0;
+			for(int j=0;j<s.length();j++)
+			{
+				if(s.charAt(i)==s.charAt(j))
+				{
+					count++;
+				}
+			}
+			System.out.println(s.charAt(i)+" - "+count);
+		}
+	}
+	
+//	output :
+//		g - 1
+//		i - 2
+//		r - 1
+	
+	public void swap()
+	{
+		String s="palak";
+		String a = "";
+		if(s.length()%2==0)
+		{
+		for(int i=0;i<s.length()-1;i++)
+		{
+			a=a+s.charAt(i+1)+s.charAt(i);
+			i++;
+		}
+		System.out.println(a);
+		}
+		else
+		{
+			for(int i=0;i<s.length()-1;i++)
+			{
+				a=a+s.charAt(i+1)+s.charAt(i);
+				i++;
+			}
+			System.out.println(a+s.charAt(s.length()-1));
+		}
+	}
+	
+//	output : apalk
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
           string s=new string();
-          s.s1();
-          s.s2();
-          s.s3();
-          s.s4();
-          s.length();
+//          s.s1();
+//          s.s2();
+//          s.s3();
+//          s.s4();
+//          s.length();
+          s.freq();
+          s.swap();
 	}
 
 }
